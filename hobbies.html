@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Life with Soccer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <div id="top" class="site-header">
+    <div class="header-inner">
+      <h1>⚽ My Life with Soccer</h1>
+      <p class="tagline">One ball. Eleven players. A lifetime obsession.</p>
+      <nav class="main-nav">
+        <a href="#story">My Story</a>
+        <a href="#path">The Path</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Highlight Video</a>
+        <a href="#dataviz">Live Data</a>
+        <a href="#back">Back to Professional Site</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===================== HERO SECTION (custom background image) ===================== -->
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Why Soccer Is My Hobby, My Outlet, My Joy</h2>
+      <p>From scuffed-up cleats on a rainy Tuesday pitch to watching the World Cup final
+        at 2 a.m. with friends — soccer has been the constant thread running through
+        my life. Scroll down to see why.</p>
+    </div>
+  </div>
+
+  <!-- ===================== MY STORY ===================== -->
+  <div id="story" class="content-block story-block">
+    <div class="text-column">
+      <h2>My Story</h2>
+      <p>I picked up a soccer ball for the first time when I was six years old, and I
+        have not put it down since. What started as a way to run around with kids in
+        my neighborhood turned into years of club teams, pickup games, and way too
+        many hours watching match highlights instead of doing homework.</p>
+      <p>What keeps me hooked isn't just the competition — it's the simplicity of the
+        game. All you really need is a ball and some open space, and suddenly you're
+        part of something that millions of people around the world share with you.</p>
+    </div>
+    <div class="image-column">
+      <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?fm=jpg&q=60&w=1200&auto=format&fit=crop"
+           alt="Soccer ball resting on a grass field">
+      <p class="caption">The simplest equipment in sports: one ball, one field.</p>
+    </div>
+  </div>
+
+  <!-- ===================== THE PATH (ordered list containing unordered list) ===================== -->
+  <div id="path" class="content-block path-block">
+    <h2>How I Built My Game (Step by Step)</h2>
+    <p>Getting better at soccer didn't happen overnight. Here is the rough roadmap I
+      followed, along with the specific skills I focused on at each stage.</p>
+    <ol class="steps-list">
+      <li>
+        <strong>Learn the fundamentals</strong>
+        <ul>
+          <li>Basic ball control (dribbling with both feet)</li>
+          <li>Passing accuracy over short distances</li>
+          <li>Understanding the offside rule</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Join a structured team</strong>
+        <ul>
+          <li>Learning positional play</li>
+          <li>Practicing set pieces (corners and free kicks)</li>
+          <li>Building fitness and stamina</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Sharpen advanced technique</strong>
+        <ul>
+          <li>First-touch under pressure</li>
+          <li>Reading the game and anticipating plays</li>
+          <li>Finishing with both feet in the box</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Play for the love of it</strong>
+        <ul>
+          <li>Weekend pickup games with friends</li>
+          <li>Watching and studying professional matches</li>
+          <li>Coaching younger players in the community</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- ===================== GALLERY ===================== -->
+  <div id="gallery" class="content-block gallery-block">
+    <h2>A Few Favorite Shots</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?fm=jpg&q=60&w=1200&auto=format&fit=crop"
+             alt="Soccer ball on a green grass field at a stadium">
+        <p class="caption">Match day always starts the same way — ball on the grass, nerves and excitement mixed together.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?fm=jpg&q=60&w=1200&auto=format&fit=crop"
+             alt="Close up of a soccer ball on grass">
+        <p class="caption">There is something timeless about a soccer ball sitting on a freshly cut pitch.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== YOUTUBE VIDEO ===================== -->
+  <div id="video" class="content-block video-block">
+    <h2>One of My Favorite Highlight Reels</h2>
+    <p>This is the kind of footage that gets me fired up to go play, even after a long
+      day. A few of these moments still give me chills.</p>
+    <div class="video-wrapper">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QtSMXXJq11Q"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-policy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- ===================== TABLEAU EMBED ===================== -->
+  <div id="dataviz" class="content-block dataviz-block">
+    <h2>Soccer by the Numbers</h2>
+    <p>I love the analytical side of the sport too. Below is a live, interactive
+      Tableau Public dashboard exploring data from a recent FIFA World Cup — feel free
+      to click around and filter it yourself.</p>
+    <div class="tableau-wrapper">
+      <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embed.3.latest.min.js"></script>
+      <tableau-viz id="tableau-viz"
+        src="https://public.tableau.com/views/SoccerWorldCupQatar2022/Dashboard"
+        toolbar="bottom"
+        hide-tabs>
+      </tableau-viz>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER / NAVIGATION BACK ===================== -->
+  <div id="back" class="site-footer">
+    <p>Thanks for stopping by my little corner of the internet about soccer.</p>
+    <p>
+      <a href="https://example.com/professional-portfolio" class="back-link">
+        ← Back to my professional portfolio
+      </a>
+    </p>
+    <p><a href="#top" class="back-link">↑ Back to top of this page</a></p>
+  </div>
+
+</body>
+</html>
